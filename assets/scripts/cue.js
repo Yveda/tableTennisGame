@@ -30,6 +30,7 @@ cc.Class({
         var power_x = distance * this.SHOOT_POWER * dir.x / len;
         var power_y = distance * this.SHOOT_POWER * dir.y / len;
 
+        //冲量函数，（冲量大小向量，球杆的原点转成世界坐标，true）
         this.body.applyLinearImpulse(cc.p(power_x,power_y),this.node.convertToWorldSpaceAR(cc.p(0,0)),true);
     },
     //碰撞回调
