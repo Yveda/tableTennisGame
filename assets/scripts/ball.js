@@ -10,7 +10,6 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     // onLoad () {},
-
     start () {
         //this指的就是当前的组件实例
         this.start_x = this.node.x;
